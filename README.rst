@@ -1,5 +1,5 @@
-Easy Encrypt
-============
+Easy Encryption
+===============
 
 Source: `github.com/WKHAllen/easyencrypt <https://github.com/WKHAllen/easyencrypt>`_
 
