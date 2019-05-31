@@ -1,31 +1,23 @@
-Easy Encryption
-===============
+# Easy Encryption
 
-Source: `github.com/WKHAllen/easyencrypt <https://github.com/WKHAllen/easyencrypt>`_
+Source: [https://github.com/WKHAllen/easyencrypt](https://github.com/WKHAllen/easyencrypt)
 
-Contents
---------
+### Contents
 
 Hashing, symmetric encryption, and public/private key encryption functions.
 
-Dependencies
-------------
+### Dependencies
 
-* `rsa <https://pypi.python.org/pypi/rsa>`_
-* `cryptography <https://pypi.python.org/pypi/cryptography>`_
+* [cryptography](https://github.com/pyca/cryptography)
+* [rsa](https://github.com/sybrenstuvel/python-rsa/)
 
-Installation
-------------
+### Installation
 
-.. code:: bash
+`pip install easyencrypt`
 
-    $ pip install easyencrypt
+### Example
 
-Example
--------
-
-.. code:: pycon
-
+```python
     >>> # hashing
     >>> from easyencrypt import newSalt, hashText
     >>> newSalt()
@@ -54,3 +46,4 @@ Example
     b"\x01@H\x16\xe5\x01\xc0\x02)\x13\x8e\xba\xbb{p_5t\xf1\x81\x18y2\x12=t\xfe\xeb(\xcf\xce\xdd\xbd'\xb2\xddS\xbd\x0e\xc3\xf5\x0b-\xd8{\xe3W\xd5\xe8)_\xa8\xfb\x11\x8d\xb2\xb0l\x04\xf2>\xd9`\x0cS\xb9"
     >>> decrypt(ciphertext, priv)
     b'Hello, World!'
+```
